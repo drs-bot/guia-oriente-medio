@@ -4,11 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>O Oriente Médio — Guia de Geografia</title>
-<meta name="description" content="Guia de geografia sobre o Oriente Médio: panorama, conflitos, petróleo, OPEP, diversidade étnica e religiosa e muito mais.">
+<meta name="description" content="Guia de geografia sobre o Oriente Médio: panorama, conflitos, petróleo, OPEP, diversidade étnica e religiosa. Com animações e quiz interativo.">
 <link rel="preload" href="assets/css/style.css" as="style">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+
+<div id="read-progress"></div>
 
 <header class="site-header">
   <div class="topbar">
@@ -22,7 +24,7 @@
     </button>
 
     <nav class="nav-links">
-      <a href="index.html">Início</a>
+      <a href="index.html" class="active">Início</a>
       <a href="pages/p1-panorama.html">1. Panorama</a>
       <a href="pages/p2-estados.html">2. Estados Nacionais</a>
       <a href="pages/p3-diversidade.html">3. Diversidade</a>
@@ -34,67 +36,73 @@
       <a href="pages/p9-opec.html">9. OPEP</a>
       <a href="pages/p10-metropoles.html">10. Metrópoles</a>
       <a href="pages/p11-economias.html">11. Atividades Econômicas</a>
+      <a href="pages/quiz.html">🧠 Quiz</a>
     </nav>
   </div>
 </header>
 
-<section class="hero">
-  <div class="eyebrow">Guia de Geografia &nbsp;·&nbsp; Ensino Médio</div>
-  <h1>O Oriente Médio<br>Panorama, Conflitos e Petróleo</h1>
-  <p class="lead">Um guia dividido em 11 páginas para entender a região que fica na interseção de três continentes, detém quase metade das reservas mundiais de petróleo e é palco de conflitos que influenciam a geopolítica mundial.</p>
+<section class="hero page-enter">
+  <div class="eyebrow reveal reveal-d1">Guia de Geografia &nbsp;·&nbsp; Ensino Médio</div>
+  <h1 class="reveal reveal-d2">O Oriente Médio<br><span>Panorama, Conflitos e Petróleo</span></h1>
+  <p class="lead reveal reveal-d3">Um guia dividido em 11 páginas para entender a região que fica na interseção de três continentes, detém quase metade das reservas mundiais de petróleo e é palco de conflitos que influenciam a geopolítica mundial.</p>
+
+  <div class="hero-actions reveal reveal-d4">
+    <a class="btn btn-primary" href="pages/p1-panorama.html">Começar pela Página 1</a>
+    <a class="btn btn-outline" href="pages/quiz.html">Fazer o Quiz</a>
+  </div>
 
   <div class="grid">
-    <a class="card" href="pages/p1-panorama.html">
+    <a class="card reveal" href="pages/p1-panorama.html">
       <span class="num">Página 1</span>
       <h3>Características Gerais — Panorama</h3>
       <p>Localização estratégica, fronteiras, petróleo, conflitos e panorama étnico principal.</p>
     </a>
-    <a class="card" href="pages/p2-estados.html">
+    <a class="card reveal" href="pages/p2-estados.html">
       <span class="num">Página 2</span>
       <h3>Formação dos Estados Nacionais</h3>
       <p>Domínio otomano, fronteiras artificiais, povos sem território e criação de Israel.</p>
     </a>
-    <a class="card" href="pages/p3-diversidade.html">
+    <a class="card reveal" href="pages/p3-diversidade.html">
       <span class="num">Página 3</span>
       <h3>Diversidade Étnica e Religiosa</h3>
       <p>Islamismo, cristianismo, judaísmo, sunitas e xiitas, persas e árabes.</p>
     </a>
-    <a class="card" href="pages/p4-conflitos-pobreza.html">
+    <a class="card reveal" href="pages/p4-conflitos-pobreza.html">
       <span class="num">Página 4</span>
       <h3>Conflitos e Pobreza</h3>
-      <p>Baixa qualidade de vida, campos de refugiados, Primavera Água e escassez hídrica.</p>
+      <p>Baixa qualidade de vida, campos de refugiados, Primavera Árabe e escassez hídrica.</p>
     </a>
-    <a class="card" href="pages/p5-fundamentalismo.html">
+    <a class="card reveal" href="pages/p5-fundamentalismo.html">
       <span class="num">Página 5</span>
       <h3>Fundamentalismo Religioso</h3>
       <p>Teocracias, califado e grupos como Hezbollah, Talibã, Estado Islâmico e Al-Qaeda.</p>
     </a>
-    <a class="card" href="pages/p6-ira.html">
+    <a class="card reveal" href="pages/p6-ira.html">
       <span class="num">Página 6</span>
       <h3>Irã e Revolução Islâmica</h3>
       <p>Golpe de 1953, xá Pahlavi, aiatolá Khomeini e a teocracia de 1979.</p>
     </a>
-    <a class="card" href="pages/p7-petroleo.html">
+    <a class="card reveal" href="pages/p7-petroleo.html">
       <span class="num">Página 7</span>
       <h3>Petróleo no Oriente Médio</h3>
       <p>Grandes reservas, importância estratégica e dependência tecnológica.</p>
     </a>
-    <a class="card" href="pages/p8-riqueza.html">
+    <a class="card reveal" href="pages/p8-riqueza.html">
       <span class="num">Página 8</span>
       <h3>Riqueza Gerada pelo Petróleo</h3>
       <p>Países do Golfo Pérsico, modernização, contraste e dependência de importações.</p>
     </a>
-    <a class="card" href="pages/p9-opec.html">
+    <a class="card reveal" href="pages/p9-opec.html">
       <span class="num">Página 9</span>
       <h3>OPEP</h3>
       <p>Histórico, fundação em 1960, choques do petróleo na década de 1970 e nacionalização.</p>
     </a>
-    <a class="card" href="pages/p10-metropoles.html">
+    <a class="card reveal" href="pages/p10-metropoles.html">
       <span class="num">Página 10</span>
       <h3>Novas Metrópoles</h3>
       <p>Cidades globais, impactos ambientais e mão de obra imigrante.</p>
     </a>
-    <a class="card" href="pages/p11-economias.html">
+    <a class="card reveal" href="pages/p11-economias.html">
       <span class="num">Página 11</span>
       <h3>Atividades Econômicas</h3>
       <p>Petróleo e turismo, agricultura com tecnologia e falta de diversificação industrial.</p>
@@ -105,6 +113,10 @@
 <footer class="site-footer">
   Guia de Geografia — Oriente Médio. Conteúdo educativo para estudos e consultas rápidas.
 </footer>
+
+<button id="to-top" aria-label="Voltar ao topo">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12l-7-7-7 7"/></svg>
+</button>
 
 <script src="assets/js/main.js"></script>
 </body>
